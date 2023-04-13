@@ -1,14 +1,14 @@
 <?php
 /**
- * This file adds functions to the Frost WordPress theme.
+ * This file adds functions to the Shimmer WordPress theme.
  *
- * @package Frost
+ * @package Shimmer
  * @author  WP Engine
  * @license GNU General Public License v2 or later
- * @link    https://frostwp.com/
+ * @link    https://shimmerwp.com/
  */
 
-if ( ! function_exists( 'frost_setup' ) ) {
+if ( ! function_exists( 'shimmer_setup' ) ) {
 
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -21,10 +21,10 @@ if ( ! function_exists( 'frost_setup' ) ) {
 	 *
 	 * @return void
 	 */
-	function frost_setup() {
+	function shimmer_setup() {
 
 		// Make theme available for translation.
-		load_theme_textdomain( 'frost', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'shimmer', get_template_directory() . '/languages' );
 
 		// Enqueue editor styles and fonts.
 		add_editor_style(
@@ -38,13 +38,13 @@ if ( ! function_exists( 'frost_setup' ) ) {
 
 	}
 }
-add_action( 'after_setup_theme', 'frost_setup' );
+add_action( 'after_setup_theme', 'shimmer_setup' );
 
 // Enqueue style sheet.
-add_action( 'wp_enqueue_scripts', 'frost_enqueue_style_sheet' );
-function frost_enqueue_style_sheet() {
+add_action( 'wp_enqueue_scripts', 'shimmer_enqueue_style_sheet' );
+function shimmer_enqueue_style_sheet() {
 
-	wp_enqueue_style( 'frost', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'shimmer', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 
 }
 
@@ -53,20 +53,20 @@ function frost_enqueue_style_sheet() {
  *
  * @since 0.9.2
  */
-function frost_register_block_styles() {
+function shimmer_register_block_styles() {
 
 	$block_styles = array(
 		'core/columns' => array(
-			'columns-reverse' => __( 'Reverse', 'frost' ),
+			'columns-reverse' => __( 'Reverse', 'shimmer' ),
 		),
 		'core/list' => array(
-			'no-disc' => __( 'No Disc', 'frost' ),
+			'no-disc' => __( 'No Disc', 'shimmer' ),
 		),
 		'core/navigation-link' => array(
-			'outline' => __( 'Outline', 'frost' ),
+			'outline' => __( 'Outline', 'shimmer' ),
 		),
 		'core/social-links' => array(
-			'outline' => __( 'Outline', 'frost' ),
+			'outline' => __( 'Outline', 'shimmer' ),
 		),
 	);
 
@@ -82,4 +82,4 @@ function frost_register_block_styles() {
 		}
 	}
 }
-add_action( 'init', 'frost_register_block_styles' );
+add_action( 'init', 'shimmer_register_block_styles' );
