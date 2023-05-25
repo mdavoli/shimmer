@@ -2,7 +2,7 @@
 /**
  * Title: Sample pricing page.
  * Slug: shimmer/page-pricing
- * Categories: featured
+ * Categories: page
  */
 ?>
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->

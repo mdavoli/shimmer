@@ -2,7 +2,7 @@
 /**
  * Title: Boxes with heading, text, button.
  * Slug: shimmer/general-boxes-two-contrast-background
- * Categories: text
+ * Categories: featured
  */
 ?>
 <!-- wp:group {"align":"wide","layout":{"type":"default"}} -->

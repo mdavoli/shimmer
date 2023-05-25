@@ -2,7 +2,7 @@
 /**
  * Title: Sample home page.
  * Slug: shimmer/page-home
- * Categories: featured
+ * Categories: page
  */
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"30px","bottom":"var:preset|spacing|x-large","left":"30px","top":"70px"},"margin":{"top":"0px"},"blockGap":"10px"}},"className":"welcome","layout":{"type":"constrained","wideSize":"800px"}} -->
@@ -17,8 +17,8 @@
 <div class="wp-block-buttons" style="margin-top:30px"><!-- wp:button {"fontSize":"small"} -->
 <div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button"><?php echo esc_html__( 'Get Started', 'shimmer' ); ?></a></div>
 <!-- /wp:button -->
-<!-- wp:button {"style":{"spacing":{"padding":{"top":"14px","bottom":"14px","left":"29px","right":"29px"}}},"className":"is-style-outline-background is-style-outline","fontSize":"small"} -->
-<div class="wp-block-button has-custom-font-size is-style-outline-background is-style-outline has-small-font-size"><a class="wp-block-button__link wp-element-button" style="padding-top:14px;padding-right:29px;padding-bottom:14px;padding-left:29px"><?php echo esc_html__( 'Learn More', 'shimmer' ); ?></a></div>
+<!-- wp:button {"className":"is-style-outline-background is-style-outline","fontSize":"small"} -->
+<div class="wp-block-button has-custom-font-size is-style-outline-background is-style-outline has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#"><?php echo esc_html__( 'Learn More', 'shimmer' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->

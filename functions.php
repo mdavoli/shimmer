@@ -59,11 +59,23 @@ function shimmer_register_block_styles() {
 		'core/columns' => array(
 			'columns-reverse' => __( 'Reverse', 'shimmer' ),
 		),
+		'core/group' => array(
+			'shadow-light' => __( 'Shadow', 'shimmer' ),
+			'shadow-solid' => __( 'Solid', 'shimmer' ),
+		),
+		'core/image' => array(
+			'shadow-light' => __( 'Shadow', 'shimmer' ),
+			'shadow-solid' => __( 'Solid', 'shimmer' ),
+		),
 		'core/list' => array(
 			'no-disc' => __( 'No Disc', 'shimmer' ),
 		),
 		'core/navigation-link' => array(
 			'outline' => __( 'Outline', 'shimmer' ),
+		),
+		'core/quote' => array(
+			'shadow-light' => __( 'Shadow', 'shimmer' ),
+			'shadow-solid' => __( 'Solid', 'shimmer' ),
 		),
 		'core/social-links' => array(
 			'outline' => __( 'Outline', 'shimmer' ),
@@ -83,3 +95,29 @@ function shimmer_register_block_styles() {
 	}
 }
 add_action( 'init', 'shimmer_register_block_styles' );
+
+/**
+ * Register block pattern categories.
+ *
+ * @since 1.0.4
+ */
+function shimmer_register_block_pattern_categories() {
+
+	register_block_pattern_category(
+		'page',
+		array(
+			'label'       => __( 'Page', 'shimmer' ),
+			'description' => __( 'Create a full page with multiple patterns that are grouped together.', 'frost' ),
+		)
+	);
+	register_block_pattern_category(
+		'pricing',
+		array(
+			'label'       => __( 'Pricing', 'shimmer' ),
+			'description' => __( 'Compare features for your digital products or service plans.', 'frost' ),
+		)
+	);
+
+}
+
+add_action( 'init', 'shimmer_register_block_pattern_categories' );

@@ -2,7 +2,7 @@
 /**
  * Title: List of posts in one column.
  * Slug: shimmer/query
- * Inserter: false
+ * Inserter: posts
  */
 ?>
 <!-- wp:query {"queryId":0,"query":{"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"layout":{"type":"constrained"}} -->
