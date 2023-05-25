@@ -2,7 +2,7 @@
 /**
  * Title: Sample link page.
  * Slug: frost/page-link
- * Categories: featured
+ * Categories: page
  */
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0px"},"padding":{"left":"0px","top":"var:preset|spacing|large","right":"0px","bottom":"var:preset|spacing|large"}},"dimensions":{"minHeight":"100vh"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
@@ -43,7 +43,7 @@
 </div>
 <!-- /wp:buttons -->
 <!-- wp:paragraph {"align":"center","fontSize":"small"} -->
-<p class="has-text-align-center has-small-font-size"><a href=https://wordpress.org/themes/frost/"><?php echo esc_html__( 'Made with Frost', 'frost' ); ?></a></p>
+<p class="has-text-align-center has-small-font-size"><a href="https://wordpress.org/themes/frost/"><?php echo esc_html__( 'Made with Frost', 'frost' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
